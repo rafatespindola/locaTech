@@ -9,4 +9,16 @@ CREATE TABLE veiculos(
 );
 
 INSERT INTO veiculos (marca, modelo, placa, ano, cor, valor_diaria) VALUES
-    ('Chevrolet', 'Celta', 'ABC-1234', 2010, 'preto', 100.00)
+    ('Chevrolet', 'Celta', 'ABC-1234', 2010, 'preto', 100.00);
+
+
+CREATE TABLE pessoas(
+     id BIGINT AUTO_INCREMENT PRIMARY KEY,
+     nome VARCHAR(255),
+     cpf VARCHAR(255),
+     telefone VARCHAR(255),
+     email VARCHAR(255)
+);
+
+INSERT INTO pessoas (nome, cpf, telefone, email) VALUES
+    ('Rafael Teles', '12345678901', '48988887777', 'rafael@gmail.com');
