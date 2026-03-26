@@ -3,6 +3,7 @@ package br.com.fiap.locatech.locatech.controllers;
 import br.com.fiap.locatech.locatech.dtos.AluguelRequestDTO;
 import br.com.fiap.locatech.locatech.entities.Aluguel;
 import br.com.fiap.locatech.locatech.services.AluguelService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/alugueis")
+@Tag(name = "Alugel", description = "Controller para CRUD de aluguéis")
 public class AluguelControler {
 
     private static final Logger logger = LoggerFactory.getLogger(AluguelControler.class);
