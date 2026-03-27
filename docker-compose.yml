@@ -1,0 +1,14 @@
+services:
+  locatech:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: locatech
+    ports:
+      - "8080:8080"
+    environment:
+      # opcional: ajuste memória/flags
+      JAVA_OPTS: "-XX:MaxRAMPercentage=75.0"
+      # se quiser mudar a porta, altere aqui e no mapeamento acima
+      # SERVER_PORT: "8080"
+    restart: unless-stopped
